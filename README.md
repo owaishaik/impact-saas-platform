@@ -109,6 +109,20 @@ Designed for scalability and future extensions (portfolios, multi-domain impact)
 
 ### Backend
 
+Create a `.env` file inside `backend/` with the following values:
+
+```bash
+PORT=5000
+DB_NAME=your_db_name
+DB_USER=your_db_user
+DB_PASSWORD=your_db_password
+DB_HOST=your_db_host
+DB_PORT=5432
+JWT_SECRET=your_jwt_secret
+```
+
+Then run:
+
 ```bash
 cd backend
 npm install
@@ -125,6 +139,16 @@ npm run dev
 
 ---
 
+## ☁️ Deployment Notes
+
+* The backend and frontend can be hosted on Azure cloud services.
+* Backend options: Azure App Service or Azure Container Apps.
+* Frontend option: Azure Static Web Apps.
+* Current database is hosted on Render free-tier PostgreSQL.
+* Database can be upgraded to a paid Render plan or migrated to Azure-managed database services as usage grows.
+
+---
+
 ## 🌍 Future Improvements
 
 * Investor portfolio management
@@ -132,6 +156,7 @@ npm run dev
 * Configurable emission factors
 * Multi-domain impact (water, waste, energy)
 * Advanced dashboards & visualisations
+* Scale this exact version into a complete Impact SaaS Platform for CCF
 
 ---
 
